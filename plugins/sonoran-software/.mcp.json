@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "sonoran-docs": {
+      "type": "http",
+      "url": "https://docs.sonoransoftware.com/~gitbook/mcp"
+    },
+    "sonoran-actions": {
+      "type": "http",
+      "url": "https://sonoransoftware.com/mcp"
+    }
+  }
+}

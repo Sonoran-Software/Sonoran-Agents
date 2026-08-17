@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "sonoran-software",
+  "displayName": "Sonoran Software",
+  "version": "0.1.0",
+  "description": "Install, configure, and build with Sonoran CAD, CMS, Radio, and official game integrations.",
+  "author": {
+    "name": "Sonoran Software Systems",
+    "url": "https://sonoransoftware.com"
+  },
+  "homepage": "https://sonoransoftware.com/developers",
+  "repository": "https://github.com/Sonoran-Software/Sonoran-Agents",
+  "keywords": ["sonoran", "fivem", "cad", "cms", "radio", "roblox", "integration"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

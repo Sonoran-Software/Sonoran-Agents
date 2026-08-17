@@ -1,0 +1,20 @@
+{
+  "name": "sonoran-software",
+  "owner": {
+    "name": "Sonoran Software Systems"
+  },
+  "description": "Official Sonoran plugins for product setup, API workflows, and custom game integrations.",
+  "plugins": [
+    {
+      "name": "sonoran-software",
+      "source": "./plugins/sonoran-software",
+      "description": "Install, configure, and build with Sonoran CAD, CMS, Radio, and official game integrations.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Sonoran Software Systems"
+      },
+      "homepage": "https://sonoransoftware.com/developers",
+      "repository": "https://github.com/Sonoran-Software/Sonoran-Agents"
+    }
+  ]
+}

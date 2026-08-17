@@ -1,0 +1,20 @@
+{
+  "name": "sonoran-software",
+  "interface": {
+    "displayName": "Sonoran Software"
+  },
+  "plugins": [
+    {
+      "name": "sonoran-software",
+      "source": {
+        "source": "local",
+        "path": "./plugins/sonoran-software"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
