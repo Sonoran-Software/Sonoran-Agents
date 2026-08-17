@@ -2,6 +2,13 @@
 
 Official plugins and agent workflows for Sonoran CAD, CMS, Radio, and supported game integrations.
 
+## Claude Cowork
+
+1. Open **Customize** in the Claude sidebar and select **Plugins**.
+2. Select **Add marketplace**.
+3. Enter `Sonoran-Software/Sonoran-Agents`.
+4. Install the **Sonoran Software** plugin.
+
 ## Claude Code
 
 Add the marketplace and install the plugin from inside Claude Code:
@@ -34,7 +41,7 @@ The plugin connects to the Sonoran documentation MCP and the hosted Sonoran acti
 
 ## Availability
 
-The GitHub marketplaces in this repository support direct installation in Claude Code and Codex. Public discovery in the universal ChatGPT and Codex plugin directory requires a separate OpenAI submission and review.
+The GitHub marketplaces in this repository support direct installation in Claude Cowork, Claude Code, and Codex. Public discovery in the universal ChatGPT and Codex plugin directory requires a separate OpenAI submission and review.
 
 ## License
 
