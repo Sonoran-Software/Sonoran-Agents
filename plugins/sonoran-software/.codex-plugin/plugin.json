@@ -1,6 +1,6 @@
 {
   "name": "sonoran-software",
-  "version": "0.1.0",
+  "version": "0.1.0+codex.20260817212720",
   "description": "Install, configure, and build with Sonoran CAD, CMS, Radio, and official game integrations.",
   "author": {
     "name": "Sonoran Software Systems",
@@ -8,15 +8,28 @@
   },
   "homepage": "https://sonoransoftware.com/developers",
   "repository": "https://github.com/Sonoran-Software/Sonoran-Agents",
-  "keywords": ["sonoran", "fivem", "cad", "cms", "radio", "roblox", "integration"],
+  "keywords": [
+    "sonoran",
+    "fivem",
+    "cad",
+    "cms",
+    "radio",
+    "roblox",
+    "integration"
+  ],
   "skills": "./skills/",
+  "apps": "./.app.json",
   "interface": {
     "displayName": "Sonoran Software",
     "shortDescription": "Set up and customize your Sonoran community.",
     "longDescription": "Use plain language to install official resources, configure Sonoran products, search current documentation, and build custom game integrations.",
     "developerName": "Sonoran Software Systems",
     "category": "Developer Tools",
-    "capabilities": ["Read", "Write", "API Actions"],
+    "capabilities": [
+      "Read",
+      "Write",
+      "API Actions"
+    ],
     "websiteURL": "https://sonoransoftware.com/developers",
     "privacyPolicyURL": "https://docs.sonoransoftware.com/policy/policy/privacy-policy",
     "termsOfServiceURL": "https://docs.sonoransoftware.com/policy/policy/terms-of-service",
