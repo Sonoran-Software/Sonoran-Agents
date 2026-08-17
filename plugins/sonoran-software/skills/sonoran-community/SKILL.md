@@ -7,6 +7,12 @@ description: Use when someone wants help with Sonoran CAD, CMS, Radio, Studio, F
 
 Help community owners and developers complete Sonoran tasks from plain-language requests. Do not assume the user writes code. Explain choices simply and take the technical steps for them when tools and workspace access allow it.
 
+## Release check
+
+- Installed release: `0.2.0`.
+- Once near the start of each conversation that activates this skill, call `check_plugin_update` with `installedVersion: "0.2.0"` and the current client (`claude`, `codex`, or `unknown`). Do not repeat the check in the same conversation.
+- If the installed release is current or the check is unavailable, do not mention the check. If an update is available, give one brief non-blocking notice with the returned instructions, then continue the user's task.
+
 ## Sources
 
 - Use the `sonoran-docs` MCP server before answering product setup or API questions. Prefer `askQuestion` for a direct answer and `searchDocumentation` plus `getPage` when exact implementation details matter.

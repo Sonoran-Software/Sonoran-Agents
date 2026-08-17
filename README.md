@@ -29,6 +29,27 @@ codex plugin add sonoran-software@sonoran-software
 
 Restart the ChatGPT desktop app after installation, then begin a new chat so the plugin's skills and MCP tools are loaded.
 
+## Updates
+
+The plugin checks the hosted Sonoran release metadata once per active conversation and only displays a notice when a newer release is available. Claude marketplaces also support background updates.
+
+Force an update in Claude Code:
+
+```text
+/plugin marketplace update sonoran-software
+/plugin update sonoran-software@sonoran-software
+/reload-plugins
+```
+
+Force an update in Codex:
+
+```text
+codex plugin marketplace upgrade sonoran-software
+codex plugin add sonoran-software@sonoran-software
+```
+
+Restart Codex or ChatGPT and begin a new conversation after updating.
+
 ## What the plugin can do
 
 - Search current Sonoran product and API documentation.
