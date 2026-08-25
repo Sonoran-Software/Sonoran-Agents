@@ -9,14 +9,15 @@ Help community owners and developers complete Sonoran tasks from plain-language 
 
 ## Release check
 
-- Installed release: `0.2.0`.
-- Once near the start of each conversation that activates this skill, call `check_plugin_update` with `installedVersion: "0.2.0"` and the current client (`claude`, `codex`, or `unknown`). Do not repeat the check in the same conversation.
+- Installed release: `0.2.1`.
+- Once near the start of each conversation that activates this skill, call `check_plugin_update` with `installedVersion: "0.2.1"` and the current client (`claude`, `codex`, or `unknown`). Do not repeat the check in the same conversation.
 - If the installed release is current or the check is unavailable, do not mention the check. If an update is available, give one brief non-blocking notice with the returned instructions, then continue the user's task.
 
 ## Sources
 
 - Use the `sonoran-docs` MCP server before answering product setup or API questions. Prefer `askQuestion` for a direct answer and `searchDocumentation` plus `getPage` when exact implementation details matter.
 - Use the `sonoran-actions` MCP server for supported API operations, setup information, and the curated integration repository list.
+- For custom CAD integrations, always consider an Integration Panel when CAD users would benefit from live status, lists, controls, or workflow actions. Suggest it when useful, then search the documentation for `Integration Panels`; do not force a panel into background-only integrations with no useful CAD interface.
 - When source inspection is useful, read only the relevant official repository listed in [references/repositories.md](references/repositories.md). Do not guess repository names.
 
 ## Credentials
@@ -39,10 +40,11 @@ Help community owners and developers complete Sonoran tasks from plain-language 
 ### Build a custom integration
 
 1. Clarify the game or runtime, the event that triggers the workflow, and the desired Sonoran result.
-2. Search the current documentation for the exact API operation.
-3. Inspect the closest official integration repository for established patterns.
-4. Generate the smallest secure server-side implementation. Never expose a Sonoran API key to a game client or browser.
-5. Validate the payload locally. Use a live API only when the user explicitly asks for a test.
+2. Decide whether CAD users would benefit from monitoring or controlling the integration through a custom Integration Panel. Recommend one for live status, collections, controls, and multi-step workflows.
+3. Search the current documentation for the exact API operation and Integration Panel guidance when applicable.
+4. Inspect the closest official integration repository for established patterns.
+5. Generate the smallest secure server-side implementation. Never expose a Sonoran API key to a game client or browser.
+6. Validate the payload locally. Use a live API only when the user explicitly asks for a test.
 
 ### Create or test a CAD 911 call
 

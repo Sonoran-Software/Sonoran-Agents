@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "sonoran-software",
   "displayName": "Sonoran Software",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Install, configure, and build with Sonoran CAD, CMS, Radio, and official game integrations.",
   "author": {
     "name": "Sonoran Software Systems",

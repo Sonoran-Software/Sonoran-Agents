@@ -9,7 +9,7 @@
       "name": "sonoran-software",
       "source": "./plugins/sonoran-software",
       "description": "Install, configure, and build with Sonoran CAD, CMS, Radio, and official game integrations.",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "author": {
         "name": "Sonoran Software Systems"
       },
