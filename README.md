@@ -2,6 +2,8 @@
 
 Official plugins and agent workflows for Sonoran CAD, CMS, Radio, and supported game integrations.
 
+The repository keeps two distinct products: `sonoran-software` for developers building integrations and `sonoran-customer` for customers administering communities through their Sonoran account.
+
 ## Claude Cowork
 
 1. Open **Customize** in the Claude sidebar and select **Plugins**.
@@ -50,7 +52,7 @@ codex plugin add sonoran-software@sonoran-software
 
 Restart Codex or ChatGPT and begin a new conversation after updating.
 
-## What the plugin can do
+## Developer plugin
 
 - Search current Sonoran product and API documentation.
 - Install and configure official game resources.
@@ -58,7 +60,11 @@ Restart Codex or ChatGPT and begin a new conversation after updating.
 - Build custom integrations for Sonoran products.
 - Preview and create supported Sonoran CAD API actions with confirmation safeguards.
 
-The plugin connects to the Sonoran documentation MCP and the hosted Sonoran actions MCP. API credentials are requested only when a tool requires them and must never be committed to source control.
+It connects to the Sonoran documentation and developer-action MCPs. API credentials are requested only when a tool requires them and must never be committed to source control.
+
+## Customer plugin
+
+The separate customer plugin signs users in with their Sonoran account. Its first release provides read-only discovery of the CAD communities they can access. Administrative tools will require live product permissions and explicit confirmation.
 
 ## Availability
 

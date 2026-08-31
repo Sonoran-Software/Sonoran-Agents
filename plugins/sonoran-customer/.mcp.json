@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "sonoran-customer": {
+      "type": "http",
+      "url": "https://sonoransoftware.com/mcp/customer"
+    }
+  }
+}

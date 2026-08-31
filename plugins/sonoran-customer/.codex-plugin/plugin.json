@@ -1,0 +1,39 @@
+{
+  "name": "sonoran-customer",
+  "version": "0.1.0",
+  "description": "Connect your Sonoran account and manage your communities, starting with Sonoran CAD.",
+  "author": {
+    "name": "Sonoran Software Systems",
+    "url": "https://sonoransoftware.com"
+  },
+  "homepage": "https://sonoransoftware.com",
+  "repository": "https://github.com/Sonoran-Software/Sonoran-Agents",
+  "keywords": [
+    "sonoran",
+    "cad",
+    "community",
+    "administration"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Sonoran Communities",
+    "shortDescription": "Manage the Sonoran communities linked to your account.",
+    "longDescription": "Sign in with your Sonoran account to find the CAD communities you can access. Administrative configuration tools will be added behind explicit permissions and confirmation.",
+    "developerName": "Sonoran Software Systems",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://sonoransoftware.com",
+    "privacyPolicyURL": "https://docs.sonoransoftware.com/policy/policy/privacy-policy",
+    "termsOfServiceURL": "https://docs.sonoransoftware.com/policy/policy/terms-of-service",
+    "defaultPrompt": [
+      "Show the Sonoran CAD communities I can access.",
+      "Which CAD community should I configure?"
+    ],
+    "brandColor": "#2D8FE5",
+    "composerIcon": "./assets/sonoran-software-icon.png",
+    "logo": "./assets/sonoran-software-icon.png"
+  },
+  "mcpServers": "./.mcp.json"
+}
