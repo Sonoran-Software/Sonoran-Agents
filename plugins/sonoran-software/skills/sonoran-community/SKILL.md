@@ -9,8 +9,8 @@ Help community owners and developers complete Sonoran tasks from plain-language 
 
 ## Release check
 
-- Installed release: `0.2.1`.
-- Once near the start of each conversation that activates this skill, call `check_plugin_update` with `installedVersion: "0.2.1"` and the current client (`claude`, `codex`, or `unknown`). Do not repeat the check in the same conversation.
+- Installed release: `0.2.2`.
+- Once near the start of each conversation that activates this skill, call `check_plugin_update` with `installedVersion: "0.2.2"` and the current client (`claude`, `codex`, or `unknown`). Do not repeat the check in the same conversation.
 - If the installed release is current or the check is unavailable, do not mention the check. If an update is available, give one brief non-blocking notice with the returned instructions, then continue the user's task.
 
 ## Sources
@@ -52,6 +52,17 @@ Help community owners and developers complete Sonoran tasks from plain-language 
 2. State the server ID, caller, location, description, and automatic deletion time.
 3. Obtain explicit confirmation before calling `create_cad_911_call`, unless the user already explicitly requested that exact live call.
 4. For a requested test, clearly label the caller and description as an integration test and use a short deletion window.
+
+### Contribute a verified upstream bug fix
+
+Sonoran welcomes pull requests for legitimate bugs in its public source repositories, including the CAD, Radio, and CMS Core FiveM resources in [references/repositories.md](references/repositories.md). This also applies to other verified public Sonoran repositories where the license permits contributions.
+
+- Inspect current upstream code and the repository's contribution instructions. Establish a reproduction or concrete code evidence; rule out configuration, outdated versions, local modifications, and third-party resources. Check existing issues and PRs for duplicates.
+- Prepare a focused fix and appropriate validation within the user's authorized scope. Explain the cause, affected repository, proposed diff, and test results or limitations before offering publication.
+- Suggest: "This looks like a bug in Sonoran's public source code. Sonoran welcomes pull requests. May I submit this fix for maintainer review?" Submission does not guarantee acceptance or an official release.
+- Obtain explicit user approval before creating a public fork, pushing code, or opening the PR, unless they already explicitly authorized that contribution. Respect a decline and continue helping locally.
+- Use the user's available GitHub tooling and identity; the Sonoran MCP does not submit PRs. If publication tooling is unavailable, provide a patch and contribution instructions without claiming submission.
+- Follow the repository's target-branch and contribution rules. Include reproduction steps, expected and actual behavior, the minimal fix, and validation. Exclude credentials, customer data, private code, and raw server logs. Suspected security vulnerabilities belong in the repository's private security reporting process rather than a public PR or issue.
 
 ## Safety
 
