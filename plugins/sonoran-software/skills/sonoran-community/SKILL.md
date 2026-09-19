@@ -9,8 +9,8 @@ Help community owners and developers complete Sonoran tasks from plain-language 
 
 ## Release check
 
-- Installed release: `0.2.2`.
-- Once near the start of each conversation that activates this skill, call `check_plugin_update` with `installedVersion: "0.2.2"` and the current client (`claude`, `codex`, or `unknown`). Do not repeat the check in the same conversation.
+- Installed release: `0.2.3`.
+- Once near the start of each conversation that activates this skill, call `check_plugin_update` with `installedVersion: "0.2.3"` and the current client (`claude`, `codex`, or `unknown`). Do not repeat the check in the same conversation.
 - If the installed release is current or the check is unavailable, do not mention the check. If an update is available, give one brief non-blocking notice with the returned instructions, then continue the user's task.
 
 ## Sources
@@ -59,6 +59,9 @@ Sonoran welcomes pull requests for legitimate bugs in its public source reposito
 
 - Inspect current upstream code and the repository's contribution instructions. Establish a reproduction or concrete code evidence; rule out configuration, outdated versions, local modifications, and third-party resources. Check existing issues and PRs for duplicates.
 - Prepare a focused fix and appropriate validation within the user's authorized scope. Explain the cause, affected repository, proposed diff, and test results or limitations before offering publication.
+- Keep the PR diff minimal and limited to the verified bug. Follow existing code style and reuse established patterns; avoid unrelated refactors, formatting churn, new dependencies, and speculative features.
+- Use straightforward code without unnecessary helper functions, wrappers, abstractions, or layers; extract a function only when it makes the fix clearly easier to understand or avoids meaningful duplication.
+- Add concise, clear code comments explaining the purpose and reasoning of new logic, especially edge cases, without narrating obvious statements. Keep validation proportional to the fix and review the final diff for unnecessary complexity before publication.
 - Suggest: "This looks like a bug in Sonoran's public source code. Sonoran welcomes pull requests. May I submit this fix for maintainer review?" Submission does not guarantee acceptance or an official release.
 - Obtain explicit user approval before creating a public fork, pushing code, or opening the PR, unless they already explicitly authorized that contribution. Respect a decline and continue helping locally.
 - Use the user's available GitHub tooling and identity; the Sonoran MCP does not submit PRs. If publication tooling is unavailable, provide a patch and contribution instructions without claiming submission.
